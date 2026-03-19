@@ -6,7 +6,7 @@ const __dirname = path.dirname(__filename);
 import express, { type Express } from "express";
 import fs from "fs";
 export function serveStatic(app: Express) {
-  const distPath = const distPath = path.resolve(__dirname, "../client/dist");
+  const distPath = path.resolve(__dirname, "../client/dist");
  
  if (!fs.existsSync(distPath)) {
     throw new Error(
