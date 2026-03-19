@@ -4,7 +4,5 @@ services:
   app:
     image: node:20
     working_dir: /app
-    command: sh -c "git clone https://github.com/rikigohain0028/Recoonlytics.git . && npm install && npm run dev"
-    ports:
-      - "5000:5000"
-    restart: always
+    command: sh -c "git clone https://github.com/rikigohain0028/Recoonlytics.git . && npm install && npm run build && npm run dev"
+
